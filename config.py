@@ -4,4 +4,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config():
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you will never guess this'
-    
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')\
+        or 'sqlite:///' + os.path.join(basedir, 'app.db')
+    # Either connects to db in root directory or creates one
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
