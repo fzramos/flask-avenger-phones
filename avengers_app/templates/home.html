@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="mx-auto">
+        <h1> Welcome to the Avenger's Phone Book</h1>
+        <h3>Click to fill out a character's information:</h3>
+
+        <a class="btn btn-secondary btn-lg" href="{{ url_for('register') }}" role="button">FORM</a>
+    </div>
+
+{% endblock content %}

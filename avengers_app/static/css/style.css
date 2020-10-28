@@ -1,0 +1,20 @@
+body {
+    /* background-image: url('../images/weird_background.jpg'); */
+    background-color: black;
+}
+
+.blacker {
+    background-color: black;
+}
+
+h1, h3 {
+    color: #d4cfcf
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+fieldset {
+    color: rgb(168, 168, 184);
+}
